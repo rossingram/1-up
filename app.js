@@ -1,17 +1,12 @@
- // requires node's http module
-  var http = require('http');
+var express = require('express');
 
-  // creates a new httpServer instance
-  http.createServer(function (req, res) {
-    // this is the callback, or request handler for the httpServer
+var app = express.createServer(express.logger());
 
-    // respond to the browser, write some headers so the 
-    // browser knows what type of content we are sending
-    res.writeHead(200, {'Content-Type': 'text/html'});
+app.get('/', function(request, response) {
+  response.send('Hello World!');
+});
 
-    // write some content to the browser that your user will see
-    res.write('<h1>hello, i know nodejitsu.</h1>')
-
-    // close the response
-    res.end();
-  }).listen(80); // the server will listen on port 80
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
