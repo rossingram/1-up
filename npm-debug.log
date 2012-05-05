@@ -1,0 +1,81 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+info using npm@1.1.21
+info using node@v0.6.17
+verbose config file /Users/ross/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /Users/ross/workspace/1-up/package.json
+verbose loadDefaults node-example@0.0.1
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/Users/ross/workspace/1-up', [ 'express' ] ]
+verbose from cache /Users/ross/workspace/1-up/package.json
+info preinstall node-example@0.0.1
+verbose from cache /Users/ross/workspace/1-up/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'express@2.2.0', null ]
+silly cache add: name, spec, args [ undefined, 'express@2.2.0', [ 'express@2.2.0', null ] ]
+verbose parsed url { pathname: 'express@2.2.0',
+verbose parsed url   path: 'express@2.2.0',
+verbose parsed url   href: 'express@2.2.0' }
+silly cache add: name, spec, args [ 'express', '2.2.0', [ 'express', '2.2.0' ] ]
+verbose parsed url { pathname: '2.2.0', path: '2.2.0', href: '2.2.0' }
+verbose addNamed [ 'express', '2.2.0' ]
+verbose addNamed [ '2.2.0', '2.2.0' ]
+verbose raw, before any munging express/2.2.0
+verbose url resolving [ 'https://registry.npmjs.org/', './express/2.2.0' ]
+verbose url resolved https://registry.npmjs.org/express/2.2.0
+verbose etag "6TLANVH97ZE9LKARNVDIQ9MGH"
+http GET https://registry.npmjs.org/express/2.2.0
+http 304 https://registry.npmjs.org/express/2.2.0
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"6TLANVH97ZE9LKARNVDIQ9MGH"',
+silly get cb     date: 'Sat, 05 May 2012 19:18:40 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag express/2.2.0 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.25-darwin-x64-11.3.0',
+verbose bin dist   { shasum: 'ab38a7eaad67a1c28495021a798d234086d73dea',
+verbose bin dist     tarball: 'http://registry.npmjs.org/express/-/express-2.2.0.tgz' } ]
+verbose caching /Users/ross/.npm/express/2.2.0/package/package.json
+verbose loadDefaults express@2.2.0
+silly resolved [ { name: 'express',
+silly resolved     description: 'Sinatra inspired web development framework',
+silly resolved     version: '2.2.0',
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved        { name: 'Aaron Heckmann',
+silly resolved          email: 'aaron.heckmann+github@gmail.com' },
+silly resolved        { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
+silly resolved        { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
+silly resolved     dependencies: { connect: '>= 1.2.0 < 2.0.0', mime: '>= 0.0.1', qs: '>= 0.0.6' },
+silly resolved     keywords: [ 'framework', 'sinatra', 'web', 'rest', 'restful' ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express.git' },
+silly resolved     main: 'index',
+silly resolved     bin: { express: './bin/express' },
+silly resolved     engines: { node: '>= 0.4.1 < 0.5.0' },
+silly resolved     _id: 'express@2.2.0',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: false,
+silly resolved     _npmVersion: '1.1.21',
+silly resolved     _nodeVersion: 'v0.6.17',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'express@2.2.0' } ]
+info into /Users/ross/workspace/1-up express@2.2.0
+info installOne express@2.2.0
+ERR! Unsupported
+ERR! Not compatible with your version of node/npm: express@2.2.0
+ERR! Required: {"node":">= 0.4.1 < 0.5.0"}
+ERR! Actual:   {"npm":"1.1.21","node":"0.6.17"}
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/usr/local/bin/npm" "install"
+ERR! cwd /Users/ross/workspace/1-up
+ERR! node -v v0.6.17
+ERR! npm -v 1.1.21
+ERR! code ENOTSUP
+ERR! message Unsupported
+ERR! errno {}
+verbose exit [ 1, true ]
