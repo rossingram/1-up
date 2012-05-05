@@ -11,7 +11,7 @@ background-color: black;
 	z-index : -1;
 
 	background: -moz-linear-gradient(-90deg, rgb(10,20,20), rgb(90,70,70));
-	background: -webkit-gradient(linear, left top, left bottom, from(rgb(0,0,200)), to(rgb(255,255,255)));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(130,183,255)), to(rgb(255,255,255)));
 }
 
 #background .level {
