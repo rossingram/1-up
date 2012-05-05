@@ -3,8 +3,5 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "2.2.0"
-    "node": "0.6.x",
-    "npm":  "1.0.x"
-
   }
 }
