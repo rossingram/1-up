@@ -2,7 +2,7 @@
   "name": "1-up.me",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.2.0",
-    "ejs": ">=0.6.1"
+    "express": "3.x",
+    "ejs": ">=0.8.x"
   }
 }
